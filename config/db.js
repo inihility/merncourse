@@ -1,18 +1,10 @@
 const mongoose = require("mongoose");
-
-// DB Config
-const db = require("./keys").mongoURI;
-
-const config = {
-  //autoIndex: false,
-  useNewUrlParser: true
-};
+const config = require("config");
+const db = config.get("mongoURI");
 
 const connectDB = async () => {
-  console.log("running connectDB()");
   try {
-    console.log("trying...");
-    await mongoose.connect(db, config);
+    await mongoose.connect(db, { useNewUrlParser: true });
     console.log(`MongoDB Connected`);
   } catch (err) {
     console.log(err);

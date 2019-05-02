@@ -1,0 +1,4 @@
+{
+  //   "mongoURI": "mongodb+srv://Kevin:sirotan123@devconnector-hl7va.mongodb.net/test?retryWrites=true"
+  "mongoURI": "mongodb://Kevin:sirotan123@devconnector-shard-00-00-hl7va.mongodb.net:27017,devconnector-shard-00-01-hl7va.mongodb.net:27017,devconnector-shard-00-02-hl7va.mongodb.net:27017/test?ssl=true&replicaSet=devconnector-shard-0&authSource=admin&retryWrites=true"
+}
